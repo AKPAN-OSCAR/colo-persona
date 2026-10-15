@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f7f4">
+  <title>Personality Colour Combinations</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <p class="eyebrow">COLOUR & PERSONALITY</p>
+      <h1>Three colours. One personality story.</h1>
+      <p class="intro">Explore two colour combinations inspired by growth, excellence, and reliability.</p>
+    </header>
+
+    <section class="combinations" aria-label="Colour combinations">
+      <article class="colour-card">
+        <div class="card-heading">
+          <span class="number">01</span>
+          <div>
+            <h2>Blue + Green</h2>
+            <p class="card-kicker">A blend of stability and growth</p>
+          </div>
+        </div>
+
+        <div class="colour-display teal" role="img" aria-label="Deep teal colour swatch">
+          <div class="swatch-label">
+            <span class="swatch-name">Deep Teal</span>
+            <span class="hex-code">#008080</span>
+          </div>
+          <button class="expand-button" type="button" data-expand="teal" aria-label="Enlarge Deep Teal colour" title="View full screen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H4v4M4 4l6 6M16 4h4v4m0-4-6 6M4 16v4h4m-4 0 6-6m10 2v4h-4m4 0-6-6"/></svg>
+            <span>Enlarge</span>
+          </button>
+        </div>
+
+        <div class="description">
+          <h3>About this combination</h3>
+          <p>Blue is associated with trust and steadiness, while green is associated with growth and productivity. Together, they suggest a person who is dependable and focused on progress.</p>
+          <div class="source-colours" aria-label="Colours included">
+            <span><i class="dot blue-dot"></i>Blue</span>
+            <span><i class="dot green-dot"></i>Green</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="colour-card">
+        <div class="card-heading">
+          <span class="number">02</span>
+          <div>
+            <h2>Gold + Green + Blue</h2>
+            <p class="card-kicker">A blend of excellence, growth, and reliability</p>
+          </div>
+        </div>
+
+        <div class="colour-display olive" role="img" aria-label="Earthy olive green colour swatch">
+          <div class="swatch-label">
+            <span class="swatch-name">Earthy Olive Green</span>
+            <span class="hex-code">#526B49</span>
+          </div>
+          <button class="expand-button" type="button" data-expand="olive" aria-label="Enlarge Earthy Olive Green colour" title="View full screen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H4v4M4 4l6 6M16 4h4v4m0-4-6 6M4 16v4h4m-4 0 6-6m10 2v4h-4m4 0-6-6"/></svg>
+            <span>Enlarge</span>
+          </button>
+        </div>
+
+        <div class="description">
+          <h3>About this combination</h3>
+          <p>Gold symbolises excellence and achievement, green suggests growth and productivity, and blue represents reliability and stability. Together, they describe someone who aims high, keeps progressing, and can be counted on.</p>
+          <div class="source-colours" aria-label="Colours included">
+            <span><i class="dot gold-dot"></i>Gold</span>
+            <span><i class="dot green-dot"></i>Green</span>
+            <span><i class="dot blue-dot"></i>Blue</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="meaning-section">
+      <p class="eyebrow">THE MEANING BEHIND THE COLOURS</p>
+      <h2>What each colour represents</h2>
+      <div class="meaning-grid">
+        <article class="meaning-item">
+          <span class="meaning-icon gold-icon" aria-hidden="true"></span>
+          <div><h3>Gold</h3><p>Excellence, achievement, ambition, and recognition for effort.</p></div>
+        </article>
+        <article class="meaning-item">
+          <span class="meaning-icon green-icon" aria-hidden="true"></span>
+          <div><h3>Green</h3><p>Growth, productivity, progress, and the patience to build toward results.</p></div>
+        </article>
+        <article class="meaning-item">
+          <span class="meaning-icon blue-icon" aria-hidden="true"></span>
+          <div><h3>Blue</h3><p>Reliability, stability, trust, and being someone others can depend on.</p></div>
+        </article>
+      </div>
+      <div class="summary">
+        <strong>Combined personality:</strong>
+        <p>Growth-minded, driven to do excellent work, and dependable.</p>
+      </div>
+      <p class="note">These meanings are symbolic interpretations, not scientific personality tests. The displayed swatches are digital design choices, not guaranteed physical paint-mixing results.</p>
+    </section>
+
+    <footer>Made to celebrate the qualities you notice in someone.</footer>
+  </main>
+
+  <div class="fullscreen-view" id="fullscreenView" role="dialog" aria-modal="true" aria-label="Enlarged colour preview" hidden>
+    <button class="close-button" id="closeFullscreen" type="button" aria-label="Close full-screen colour preview">× <span>Close</span></button>
+    <div class="fullscreen-caption">
+      <h2 id="fullscreenName">Deep Teal</h2>
+      <p id="fullscreenHex">#008080</p>
+    </div>
+  </div>
+</body>
+</html>
